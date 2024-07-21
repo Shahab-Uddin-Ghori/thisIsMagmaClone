@@ -1,10 +1,109 @@
-/* css universal setting */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@font-face {
+  font-family: a;
+  src: url(./Magma_KFOlCnqEu92Fr1MmEU9fBBc4\\(1\).ttf\at\main\·\aadilkhan08_Magma.html);
 }
-html,body{
-    width: 100%;
-    height: 100%;
+@font-face {
+  font-family: b;
+  src: url(./Magma_KFOmCnqEu92Fr1Mu4mxK\\(1\).ttf\at\main\·\aadilkhan08_Magma.html);
+}
+
+/* css universal setting */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+}
+#page1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+#page1 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page1 nav img {
+  margin-top: -2vw;
+  margin-left: -5.7vw;
+  width: 13.2%;
+}
+
+#page1 nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: absolute;
+  height: 10vh;
+  width: 100%;
+  /* background-color: red; */
+}
+
+#page1 nav button {
+  padding: 15px 28px;
+  background-color: #0b48ed;
+  border-radius: 50px;
+  color: #fff;
+  border: none; /* Remove the existing border */
+  font-size: 15px;
+  box-shadow: 0 0 0 0.3px #fff; /* Subtle border effect using box-shadow */
+}
+
+#right-nav {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2vw;
+}
+
+#bottom-page1 {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  /* background-color: red; */
+}
+#bottom-page1 h1 {
+  font-size: 6vw;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+#bottom-text-buttom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: yellow; */
+  margin-top: 2vw;
+  gap: 2rem;
+}
+#bottom-text-buttom h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+  font-weight: 100;
+  line-height: 2vw;
+  color: #fff;
+}
+#bottom-text-buttom button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+  width: 12vw;
+  height: 3vw;
+  border-radius: 50px;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  color: #0b48ed;
+  font-weight: 100;
+  margin-top: 2vw;
 }
