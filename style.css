@@ -1,45 +1,42 @@
-@font-face {
-  font-family: a;
-  src: url(./Magma_KFOlCnqEu92Fr1MmEU9fBBc4\\(1\).ttf\at\main\·\aadilkhan08_Magma.html);
-}
-@font-face {
-  font-family: b;
-  src: url(./Magma_KFOmCnqEu92Fr1Mu4mxK\\(1\).ttf\at\main\·\aadilkhan08_Magma.html);
-}
+/* Import Jost Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap");
 
-/* css universal setting */
+/* CSS Universal Settings */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Jost", Arial, Helvetica, sans-serif; /* Apply Jost font family */
 }
+
 html,
 body {
   width: 100%;
   height: 100%;
 }
 
+/* Main Container */
 #main {
   position: relative;
   overflow: hidden;
 }
+
+/* Page 1 Settings */
 #page1 {
   height: 100vh;
   width: 100%;
   position: relative;
 }
+
 #page1 video {
+    position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
-#page1 nav img {
-  margin-top: -2vw;
-  margin-left: -5.7vw;
-  width: 13.2%;
-}
-
+/* Navigation Bar */
 #page1 nav {
   display: flex;
   align-items: center;
@@ -48,62 +45,51 @@ body {
   position: absolute;
   height: 10vh;
   width: 100%;
-  /* background-color: red; */
 }
 
-#page1 nav button {
-  padding: 15px 28px;
-  background-color: #0b48ed;
-  border-radius: 50px;
-  color: #fff;
-  border: none; /* Remove the existing border */
-  font-size: 15px;
-  box-shadow: 0 0 0 0.3px #fff; /* Subtle border effect using box-shadow */
+#page1 nav img {
+  margin-top: -2vw;
+  margin-left: -5.7vw;
+  width: 13.2%;
 }
 
+
+/* Right Navigation Container */
 #right-nav {
   display: flex;
   gap: 1rem;
   margin-top: 2vw;
 }
 
+
+/* Bottom Section of Page 1 */
 #bottom-page1 {
   position: absolute;
   bottom: 15%;
   left: 10%;
-  /* background-color: red; */
 }
+
 #bottom-page1 h1 {
   font-size: 6vw;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
+  line-height: 6vw;
 }
-#bottom-text-buttom {
+
+/* Bottom Text and Button Container */
+#bottom-text-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: yellow; */
   margin-top: 2vw;
   gap: 2rem;
 }
-#bottom-text-buttom h5 {
-  font-family: Arial, Helvetica, sans-serif;
+
+#bottom-text-button h5 {
   font-size: 1.2vw;
   font-weight: 100;
   line-height: 2vw;
   color: #fff;
 }
-#bottom-text-buttom button {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2vw;
-  width: 12vw;
-  height: 3vw;
-  border-radius: 50px;
-  background-color: #fff;
-  outline: none;
-  border: none;
-  color: #0b48ed;
-  font-weight: 100;
-  margin-top: 2vw;
-}
+
+  
